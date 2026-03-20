@@ -39,7 +39,7 @@ type ProducerConfig struct {
 }
 
 type ConsumerConfig struct {
-	BatchInterval time.Duration `env:"CONSUMER_BATCH_INTERVAL" envDefault:"10s"`
+	BatchInterval time.Duration `env:"CONSUMER_BATCH_INTERVAL" envDefault:"10m"`
 }
 
 func Load() (*Config, error) {
